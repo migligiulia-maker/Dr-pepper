@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-drp-burgundy: #71121c;
+  --color-drp-maroon: #4a0b12;
+  --color-drp-cream: #f5f5dc;
+  --color-drp-black: #000000;
+  --color-drp-silver: #e5e7eb;
+  --color-drp-accent: #ffffff;
+
+  --font-display: "Outfit", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-drp-burgundy);
+  color: var(--color-drp-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background-color: var(--color-drp-cream);
+  color: var(--color-drp-burgundy);
+}
